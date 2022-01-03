@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+<!--Cascading Style Sheets(CSS) is used to format the layout of a webpage.-->
+<!--Cascading means that a style applied to a parent element will also apply to all children elements
+within the parent. So if you set te color of the bodt text to "blue" all headings, paragraphs and other
+text elements within the body will get the same colour unless you specify somethin else-->
+<style>
+   body {background-color: #0d6efd;}
+   h1 {color:#373b3e;}
+   p {color: red;}
+   /*here you update the link colors*/
+   a:link{
+       color:green;
+       background-color: transparent;
+       text-decoration: none;
+   }
+   a:visited{
+       color:blue;
+       background-color: transparent;
+       text-decoration: none;
+   }
+   a:hover {
+       color:orange;
+       background-color: transparent;
+       text-decoration: underline;
+   }
+   a:active{
+       color:yellow;
+       background-color: transparent;
+       text-decoration: underline;
+   }
+</style>
+<!--<style> element is used in the head section of the HTML Page- this will affect the body and called
+an internal CSS-->
+</head>
+<body>
+
+<!--inline CSS is used to apply a unique style to a single HTML element-->
+<!--Inline CSS uses the style attribute to an HTML element-->
+<h1 style="color:blue;">Blue Heading
+</h1>
+<p style="color:red;">
+    A red paragraph
+</p>
+<p>
+    <a href="https://www.w3schools.com/">Visit w3schools</a>
+<!--Unvisited link is underlined and blue; Visited link is underlined and purple; Active link is underlined and red-->
+    <br>
+    <a href="https://www.bbc.co.uk/news/" target="_top">Visit BBC News</a>
+<!-- target attribute can have the following values: _blank to open on a new window or tab,
+     _parent opens on in the parent frame, _top opens in the full body of the window-->
+</p>
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+
+<h2>Emails</h2>
+<p><a href="mailto:linkinbarbie@gmail.com">Send Email</a></p>
+</body>
+</html>
